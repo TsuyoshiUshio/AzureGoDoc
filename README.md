@@ -9,7 +9,10 @@ github.com/go-autorest
 github.com/azure-sdk-for-go
 ```
 
-If you want to add other libraries, feel free to add it and send pull request.
+# Contribution
+
+If you want to add other libraries, feel free to add it and send pull request. 
+The architecture is very simple. I just `go get` package into the Dockerfile then execute godoc command for expose the doc. So if you want to add other repository, feel free to edit Dockerfile. However, make sure it work at least on your local environment.
 
 This repository is automatically build on the DockerHub. Then automatically deployed on App Service on Linux.
 
